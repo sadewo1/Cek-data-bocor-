@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cek Data Bocor — Sadewo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Cek Data Bocor</h1>
+    <p>Cek apakah email atau passwordmu pernah bocor di breach publik.</p>
+
+    <div class="section">
+      <h2>📧 Cek Email/Gmail</h2>
+      <input type="email" id="emailInput" placeholder="contoh: sadewo@gmail.com" />
+      <button onclick="checkEmail()">Cek Sekarang</button>
+      <div id="emailResult" class="result"></div>
+    </div>
+
+    <div class="section">
+      <h2>🔑 Cek Password (Aman!)</h2>
+      <input type="password" id="pwdInput" placeholder="Ketik passwordmu (tidak dikirim utuh)" />
+      <button onclick="checkPassword()">Cek Sekarang</button>
+      <div id="pwdResult" class="result"></div>
+    </div>
+
+    <div class="footer">
+      <p>💡 Pakai teknologi <a href="https://haveibeenpwned.com/">Have I Been Pwned</a> — aman & privasi terjaga.</p>
+      <p>⚡ Dibuat oleh Sadewo — Belajar Cybersecurity</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
